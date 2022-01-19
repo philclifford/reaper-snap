@@ -15,6 +15,9 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 architectures:
   - build-on: i386
   - build-on: amd64
+  - build-on: aarch64
+  - build-on: armv7l
+
 
 parts:
   reaper:
@@ -22,6 +25,8 @@ parts:
     source:
       - on amd64: https://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_x86_64.tar.xz
       - on i386: https://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_i686.tar.xz
+      - on aarch64: https://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_aarch64.tar.xz
+      - on armv7l:  https://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_armv7l.tar.xz
     stage-packages:
       - libpulse0
       - jackd1
