@@ -18,7 +18,7 @@ architectures:
 parts:
   reaper:
     plugin: dump
-    source: 
+    source:
       - on amd64: http://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_x86_64.tar.xz
       - on i386: http://reaper.fm/files/6.x/reaper$SNAPCRAFT_PROJECT_VERSION_linux_i686.tar.xz
     stage-packages:
